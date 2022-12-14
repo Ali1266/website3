@@ -1,0 +1,285 @@
+@import url('https://allfont.ru/allfont.css?fonts=garamond');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=EB+Garamond:wght@700&display=swap');
+@font-face {
+    font-family: "Garamond";
+    src: url("../fonts/Garamond/garamond_bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url("../fonts/Garamond/garamond.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    width: 1356px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url(../image/bgc.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 80px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    color: #CDAA7D;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background-color: #CDAA7D;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+    bottom: -2px;
+}
+
+.header-heading {
+    text-align: center;
+    margin-top: 260px;
+}
+
+.head {
+    font-family: 'Garamond';
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 290px;
+    padding-bottom: 100px;
+    column-gap: 20px;
+}
+
+.scroll-item {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.block_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 128px 0 87px 0;
+    max-width: 856px;
+    row-gap: 60px;
+}
+
+.info-img {
+    max-width: 80px;
+}
+
+.info-text {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 130%;
+}
+
+.block-cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 44px;
+    row-gap: 60px;
+    margin-bottom: 158px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card-img::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 396px;
+    height: 300px;
+    border: solid #CDAA7D 1px;
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+.card-title {
+    font-family: 'Garamond';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.block-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 168px;
+}
+
+.block-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.jobs-header {
+    font-family: 'Garamond';
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.jobs-menu {
+    display: flex;
+    column-gap: 60px;
+    font-size: 24px;
+    margin: 80px 0 55px 0;
+}
+
+.job-link {
+    position: relative;
+    transition: all .3s;
+}
+
+.job-link:hover {
+    color: #CDAA7D;
+}
+
+.job-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background-color: #CDAA7D;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.job-link:hover::before {
+    opacity: 1;
+    bottom: -5px;
+}
+
+.jobs-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.footer-info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer-info::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    top: 0;
+}
+
+.footer-info::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row-name {
+    font-family: 'Garamond';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-row-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-size: 18px;
+}
+
+.footer-add {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.5;
+}
